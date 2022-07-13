@@ -1,0 +1,58 @@
+{
+  "root": true,
+  "env": {
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": [
+    "solid",
+    "prettier"
+  ],
+  "globals": {
+    "module": true,
+    "require": true,
+    "__dirname": true
+  },
+	"settings": {
+		"import/resolver": {
+			"alias": {
+				"map": [
+					[
+						"@api",
+						"./src/api"
+					],
+					[
+						"@components",
+						"./src/uiux/components"
+					],
+					[
+						"@widgets",
+						"./src/uiux/widgets"
+					],
+					[
+						"@",
+						"./src"
+					],
+					[
+						"@assets",
+						"./src/assets"
+					],
+					[
+						"@utils",
+						"./src/utils"
+					]
+				]
+			}
+		}
+	},
+  "extends": [
+    "eslint:recommended",
+    "plugin:solid/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": 2
+  }
+}

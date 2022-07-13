@@ -1,0 +1,55 @@
+{
+  "exclude": [
+    "dist",
+    "node_modules",
+    ".idea",
+    ".vscode"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components": [
+        "src/uiux/components"
+      ],
+      "@components/*": [
+        "src/uiux/components/*"
+      ],
+      "@widgets": [
+        "src/uiux/widgets"
+      ],
+      "@widgets/*": [
+        "src/uiux/widgets/*"
+      ],
+      "@api": [
+        "src/api"
+      ],
+      "@api/*": [
+        "src/api/*"
+      ],
+      "@assets": [
+        "src/assets"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@utils": [
+        "src/utils"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@pages": [
+        "src/pages"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ]
+    },
+    "target": "ES5",
+    "module": "ES6",
+    "jsx": "react"
+  }
+}
